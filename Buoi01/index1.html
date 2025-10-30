@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cooks Delight — HomeWork Week 2</title>
+  <style>
+    /* CSS cơ bản để có layout tĩnh, dễ chỉnh */
+    :root {
+      --max-w: 1100px;
+      --accent: #c0392b;
+      --muted: #666;
+      --card-bg: #fff;
+      --page-bg: #f6f6f6;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--page-bg);
+      color:#222;
+      line-height:1.4;
+    }
+    .container{max-width:var(--max-w); margin:0 auto; padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between; gap:16px; margin-bottom:24px;}
+    .brand{font-weight:700; font-size:20px;}
+    nav ul{list-style:none; padding:0; margin:0; display:flex; gap:14px;}
+    nav a{color:#333; text-decoration:none; font-weight:600; font-size:14px;}
+    .hero{
+      background:linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.02));
+      padding:48px; border-radius:10px; margin-bottom:24px;
+    }
+    .hero h1{margin:0 0 12px; font-size:28px;}
+    .hero p{margin:0 0 18px; color:var(--muted);}
+    .btn{display:inline-block; padding:10px 16px; background:var(--accent); color:#fff; border-radius:8px; text-decoration:none; font-weight:600;}
+    .categories{display:flex; gap:12px; margin:18px 0 6px;}
+    .cat{background:#fff;padding:8px 12px;border-radius:8px; box-shadow:0 1px 2px rgba(0,0,0,0.04); font-weight:600;}
+    .grid{display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:18px;}
+    .card{background:var(--card-bg); border-radius:10px; padding:12px; box-shadow:0 6px 14px rgba(0,0,0,0.06);}
+    .card img{width:100%; height:160px; object-fit:cover; border-radius:8px;}
+    .card h3{margin:10px 0 6px;}
+    .meta{font-size:13px; color:var(--muted); margin-bottom:8px;}
+    footer{margin-top:30px; padding:18px 0; color:var(--muted); text-align:center;}
+    .subscribe{background:#fff;padding:12px;border-radius:10px;display:flex;gap:8px;align-items:center;max-width:560px;}
+    .subscribe input{flex:1;padding:10px;border-radius:8px;border:1px solid #ddd;}
+    .tag-new{display:inline-block;background:#f1c40f;color:#333;padding:4px 8px;border-radius:6px;font-weight:700;font-size:12px;margin-left:6px;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">Cooks Delight</div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">RECIPES</a></li>
+          <li><a href="#">COOKING TIPS</a></li>
+          <li><a href="#">ABOUT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+        <div style="flex:1;min-width:260px">
+          <h1>UNLEASH CULINARY EXCELLENCE</h1>
+          <p>Explore a world of flavors, discover handcrafted recipes, and let the aroma of our passion for cooking fill your kitchen.</p>
+          <a class="btn" href="#">EXPLORE RECIPES</a>
+        </div>
+        <div style="min-width:220px;">
+          <div style="font-weight:700;margin-bottom:8px;">SUBSCRIBE</div>
+          <div class="subscribe">
+            <input placeholder="Enter your email" type="email" />
+            <button class="btn" style="padding:8px 12px;">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>OUR DIVERSE PALETTE</h2>
+      <p>If you are a breakfast enthusiast, a connoisseur of savory delights, or on the hunt for delectable desserts, our curated selection has something to satisfy every palate.</p>
+
+      <div class="categories" aria-hidden="true">
+        <div class="cat">BREAKFAST</div>
+        <div class="cat">LUNCH</div>
+        <div class="cat">DINNER</div>
+        <div class="cat">DESSERT</div>
+        <div class="cat">QUICK BITE!</div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px;">
+      <h2>FEATURED RECIPES</h2>
+
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/chicken.jpg" alt="Savory Herb-Infused Chicken">
+          <h3>Savory Herb-Infused Chicken</h3>
+          <div class="meta">40 MIN - EASY PREP - 3 SERVES</div>
+          <p>Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken.</p>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/chocolate-mousse.jpg" alt="Decadent Chocolate Mousse">
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <h3 style="margin:10px 0 6px;">Decadent Chocolate Mousse <span class="tag-new">NEW</span></h3>
+          </div>
+          <div class="meta">30 MIN - MEDIUM PREP - 4 SERVES</div>
+          <p>Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:30px;">
+      <h2>RECIPES — EMBARK ON A JOURNEY</h2>
+      <p style="color:var(--muted)">With our diverse collection of recipes we have something to satisfy every palate.</p>
+
+      <div class="grid" style="margin-top:12px;">
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/chicken.jpg" alt="">
+          <h3>Savory Herb-Infused Chicken</h3>
+          <div class="meta">40 MIN - EASY PREP - 3 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/lemon-grilled.jpg" alt="">
+          <h3>Lemon Garlic Grilled Chicken</h3>
+          <div class="meta">1 HOUR - HARD PREP - 4 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/quinoa.jpg" alt="">
+          <h3>Quinoa Veggie Stir-Fry <span class="tag-new">NEW</span></h3>
+          <div class="meta">30 MIN - EASY PREP - 2 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/smoothie.jpg" alt="">
+          <h3>Berry Bliss Smoothie Bowl <span class="tag-new">NEW</span></h3>
+          <div class="meta">10 MIN - EASY PREP - 2 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/spaghetti.jpg" alt="">
+          <h3>Spaghetti Aglio e Olio <span class="tag-new">NEW</span></h3>
+          <div class="meta">20 MIN - EASY PREP - 2 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+
+        <article class="card">
+          <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/grilled-veggies.jpg" alt="">
+          <h3>Grilled Veggies with Sauce <span class="tag-new">NEW</span></h3>
+          <div class="meta">25 MIN - MEDIUM PREP - 4 SERVES</div>
+          <a href="#" class="btn" style="margin-top:8px;display:inline-block;">VIEW RECIPE</a>
+        </article>
+      </div>
+    </section>
+
+    <section style="margin-top:30px;">
+      <h2>ABOUT US — OUR CULINARY CHRONICLE</h2>
+      <p>Our journey is crafted with dedication, creativity, and an unrelenting commitment to delivering delightful culinary experiences. Join us in savoring the essence of every dish and the stories that unfold.</p>
+      <a href="#" class="btn" style="margin-top:8px;display:inline-block;">READ MORE</a>
+
+      <div style="display:flex;gap:8px;margin-top:12px;">
+        <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/meat.jpg" alt="" style="width:100px;height:70px;object-fit:cover;border-radius:8px;">
+        <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/chef.jpg" alt="" style="width:100px;height:70px;object-fit:cover;border-radius:8px;">
+        <img src="https://nguyenlehoainam.github.io/Web-Private/Week2/images/pot.jpg" alt="" style="width:100px;height:70px;object-fit:cover;border-radius:8px;">
+      </div>
+    </section>
+
+    <footer>
+      <div style="margin-top:20px;font-weight:700;">SUBSCRIBE</div>
+      <div style="color:var(--muted);max-width:640px;margin:6px auto 12px;">Subscribe to our newsletter for a weekly serving of recipes, cooking tips, and exclusive insights straight to your inbox.</div>
+
+      <div style="display:flex;justify-content:center;">
+        <div class="subscribe" style="max-width:420px;">
+          <input placeholder="Email address" type="email" />
+          <button class="btn">SUBSCRIBE</button>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;font-size:13px;color:var(--muted);">
+        COPYRIGHT © 2024 COOKS DELIGHT
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
