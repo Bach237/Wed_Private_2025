@@ -1,15 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, Javascript">
-    <meta name="description" content="Đây là khóa học Front-End!">
-    <meta name="author" content="Nguyễn Duy Bách">
-    <title>Tiêu đề trang</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập tuần 2 - Cooks Delight</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+
   <body>
-    <!-- Đây là phần body -->
-    <h1>Tiêu đề lớn</h1>
-    <p>Tiêu đề nhỏ</p>
+    <header>
+      <h1>Cooks Delight</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#tips">Cooking Tips</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+        <button type="button">Subscribe</button>
+      </nav>
+
+      <h2>UNLEASH CULINARY EXCELLENCE</h2>
+      <p>
+        Explore a world of flavors, discover handcrafted recipes, and let the
+        aroma of our passion for cooking fill your kitchen.
+      </p>
+      <button type="button">Explore Recipes</button>
+    </header>
+
+    <main>
+      <section id="explore">
+        <button><h4>EXPLORE</h4></button>
+        <h1>OUR DIVERSE PALETTE</h1>
+        <p>
+          If you are a breakfast enthusiast, a connoisseur of savory delights,
+          or on the hunt for delectable desserts, our curated selection has
+          something to satisfy every palate.
+        </p>
+        <button type="button">SEE MORE</button>
+
+        <table border="1">
+          <tr>
+            <td>
+              <i class="fa-solid fa-mug-hot"></i>
+              <a href="#breakfast">Breakfast</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa-solid fa-utensils"></i>
+              <a href="#lunch">Lunch</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa-solid fa-burger"></i>
+              <a href="#dinner">Dinner</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa-solid fa-cookie"></i>
+              <a href="#dessert">Dessert</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <i class="fa-solid fa-bolt"></i>
+              <a href="#quickbite">Quick Bite!</a>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="featured">
+        <h2>FEATURED RECIPES</h2>
+        <button type="button"><i class="fa-solid fa-less-than"></i></button>
+        <button type="button"><i class="fa-solid fa-greater-than"></i></button>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg"
+            width="200"
+            height="200"
+            alt="Savory Herb-Infused Chicken"
+          />
+          <h3>Savory Herb-Infused Chicken</h3>
+          <p>
+            Indulge in the rich and savory symphony of flavors with our Savory
+            Herb-Infused Chicken.
+          </p>
+          <p>40 MIN - EASY PREP - 3 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg"
+            width="200"
+            height="200"
+            alt="Decadent Chocolate Mousse"
+          />
+          <h3>Decadent Chocolate Mousse</h3>
+          <p>
+            Dive into the velvety indulgence of our Decadent Chocolate Mousse. A
+            dessert that transcends sweetness!
+          </p>
+          <p>30 MIN - MEDIUM PREP - 4 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+      </section>
+
+      <section id="journey">
+        <button><h4>RECIPES</h4></button>
+        <h2>EMBARK ON A JOURNEY</h2>
+        <p>
+          With our diverse collection of recipes we have something to satisfy
+          every palate.
+        </p>
+
+        <div>
+          <button><a href="#">ALL</a></button>
+          <button><a href="#">VEGAN</a></button>
+          <button><a href="#">BREAKFAST</a></button>
+          <button><a href="#">LUNCH</a></button>
+          <button><a href="#">DINNER</a></button>
+          <button><a href="#">DESSERT</a></button>
+          <button><a href="#">QUICK BITE!</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg"
+            width="200"
+            height="200"
+            alt="Savory Herb-Infused Chicken"
+          />
+          <h3>Savory Herb-Infused Chicken</h3>
+          <p>40 MIN - EASY PREP - 3 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg"
+            width="200"
+            height="200"
+            alt="Lemon Garlic Grilled Chicken"
+          />
+          <h3>Lemon Garlic Grilled Chicken</h3>
+          <p>1 HOUR - HARD PREP - 4 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg"
+            width="200"
+            height="200"
+            alt="Quinoa Veggie Stir-Fry"
+          />
+          <h3>Quinoa Veggie Stir-Fry</h3>
+          <p>30 MIN - EASY PREP - 2 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1337825/pexels-photo-1337825.jpeg"
+            width="200"
+            height="200"
+            alt="Berry Bliss Smoothie Bowl"
+          />
+          <h3>Berry Bliss Smoothie Bowl</h3>
+          <p>10 MIN - EASY PREP - 2 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg"
+            width="200"
+            height="200"
+            alt="Spaghetti Aglio e Olio"
+          />
+          <h3>Spaghetti Aglio e Olio</h3>
+          <p>20 MIN - EASY PREP - 2 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1510684/pexels-photo-1510684.jpeg"
+            width="200"
+            height="200"
+            alt="Grilled Veggies with Sauce"
+          />
+          <h3>Grilled Veggies with Sauce</h3>
+          <p>25 MIN - MEDIUM PREP - 4 SERVES</p>
+          <button><a href="#">VIEW RECIPE</a></button>
+        </div>
+      </section>
+
+      <section id="about">
+        <button><h4>ABOUT US</h4></button>
+        <h2>OUR CULINARY CHRONICLE</h2>
+        <p>
+          Our journey is crafted with dedication, creativity, and an unrelenting
+          commitment to delivering delightful culinary experiences. Join us in
+          savoring the essence of every dish and the stories that unfold.
+        </p>
+        <button><a href="#">READ MORE</a></button>
+
+        <div>
+          <img
+            src="https://www.bradleysmoker.com/cdn/shop/articles/HOW_TO_REVERSE_SEAR_MEAT_WITH_A_FOOD_SMOKER.webp?v=1675738998"
+            width="200"
+            height="200"
+            alt="Beef Steak"
+          />
+          <img
+            src="https://images.pexels.com/photos/3814446/pexels-photo-3814446.jpeg"
+            width="200"
+            height="200"
+            alt="Chef"
+          />
+          <img
+            src="https://images.pexels.com/photos/592815/pexels-photo-592815.jpeg"
+            width="200"
+            height="200"
+            alt="Clock"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="subscribe">
+        <button><h4>SUBSCRIBE</h4></button>
+        <h2>JOIN THE FUN — SUBSCRIBE NOW!</h2>
+        <p>
+          Subscribe to our newsletter for a weekly serving of recipes, cooking
+          tips, and exclusive insights straight to your inbox.
+        </p>
+        <input type="email" placeholder="Enter your email address" />
+        <button type="button">SUBSCRIBE</button>
+      </section>
+
+      <h1>Cooks Delight</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#tips">Cooking Tips</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+      <p>COPYRIGHT © 2024 COOKS DELIGHT</p>
+    </footer>
   </body>
 </html>
